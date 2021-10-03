@@ -383,7 +383,7 @@ public class MonitoringPage
                 }
 
                 @Override
-                protected CharSequence getDefaultChoice(String aSelectedValue)
+                protected CharSequence getDefaultChoice(String aSelectedValue)/*This class is initialized but not used*/
                 {
                     return "";
                 }
