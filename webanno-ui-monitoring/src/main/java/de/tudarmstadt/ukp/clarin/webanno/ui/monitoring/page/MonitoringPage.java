@@ -136,8 +136,7 @@ public class MonitoringPage
     /**
      * The user column in the user-document status table
      */
-    public static final String USER = "user:";
-
+    public static final String USER = "user:";/*This string is not used anywhere in the class*/
     /**
      * The document column in the user-document status table
      */
