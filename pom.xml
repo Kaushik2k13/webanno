@@ -1458,6 +1458,8 @@
     <profile>
       <id>doc-only</id>
       <properties>
+        <sonar.organization>kaushik2k13</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <mdep.analyze.skip>true</mdep.analyze.skip>
         <maven.main.skip>true</maven.main.skip>
         <maven.test.skip>true</maven.test.skip>
