@@ -19,6 +19,15 @@
 <html xmlns:wicket="http://wicket.apache.org">
 <body>
   <wicket:extend>
+    <script>
+      function printContent(div){
+        var restorepage = $('body').html();
+        var printcontent = $('#' + div).clone();
+        $('body').empty().html(printcontent);
+        window.print();
+        $('body').html(restorepage);
+        }
+    </script>
     <div class="flex-content flex-v-container">
       <div class="annotation-editor-container flex-content flex-h-container flex-gutter flex-no-initial-gutter">
         <div wicket:id="leftSidebar" class="flex-sidebar flex-v-container flex-gutter"></div>
@@ -31,6 +40,7 @@
             <div class="card-body flex-v-container" style="padding: 0px;">
               <nav wicket:id="actionBar" class="action-bar"/>
               <div wicket:id="editor" class="flex-content flex-v-container" style="padding: 0px;"/>
+              <button id="print" onclick="printContent('Export as image');">Printer</button>
             </div>
           </div>
         </div>
