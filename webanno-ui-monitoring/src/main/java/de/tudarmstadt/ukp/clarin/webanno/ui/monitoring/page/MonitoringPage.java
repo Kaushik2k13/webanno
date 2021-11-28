@@ -136,8 +136,6 @@ public class MonitoringPage
     /**
      * The user column in the user-document status table
      */
-    public static final String USER = "user:";
-
     /**
      * The document column in the user-document status table
      */
@@ -148,7 +146,7 @@ public class MonitoringPage
     public static final String LAST_ACCESS = "last access:";
     public static final String LAST_ACCESS_ROW = "last access";
 
-    private @SpringBean AnnotationSchemaService annotationService;
+  
     private @SpringBean(required = false) AutomationService automationService;
     private @SpringBean DocumentService documentService;
     private @SpringBean ProjectService projectService;
