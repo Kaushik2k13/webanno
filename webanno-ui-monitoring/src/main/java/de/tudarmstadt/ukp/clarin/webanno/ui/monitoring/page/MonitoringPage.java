@@ -25,7 +25,6 @@ import static de.tudarmstadt.ukp.clarin.webanno.model.AnnotationDocumentStateTra
 import static de.tudarmstadt.ukp.clarin.webanno.model.AnnotationDocumentStateTransition.NEW_TO_ANNOTATION_IN_PROGRESS;
 import static de.tudarmstadt.ukp.clarin.webanno.model.AnnotationDocumentStateTransition.NEW_TO_IGNORE;
 import static de.tudarmstadt.ukp.clarin.webanno.model.PermissionLevel.ANNOTATOR;
-import static de.tudarmstadt.ukp.clarin.webanno.model.SourceDocumentState.ANNOTATION_FINISHED;
 import static de.tudarmstadt.ukp.clarin.webanno.model.SourceDocumentState.ANNOTATION_IN_PROGRESS;
 import static de.tudarmstadt.ukp.clarin.webanno.model.SourceDocumentState.CURATION_FINISHED;
 import static de.tudarmstadt.ukp.clarin.webanno.model.SourceDocumentState.CURATION_IN_PROGRESS;
@@ -179,7 +178,6 @@ public class MonitoringPage
 
     static {
         Map<Object, ResourceReference> icons = new HashMap<>();
-        icons.put(ANNOTATION_FINISHED, ICON_FINISHED);
         icons.put(CURATION_FINISHED, ICON_FINISHED);
         icons.put(CURATION_IN_PROGRESS, ICON_INPROGRESS);
         // We only show these icons in the curation column and if the annotation is still in
