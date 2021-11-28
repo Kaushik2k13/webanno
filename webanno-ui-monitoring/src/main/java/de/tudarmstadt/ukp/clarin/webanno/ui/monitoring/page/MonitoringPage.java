@@ -378,7 +378,7 @@ public class MonitoringPage
                             Project aNewSelection = ProjectSelectionForm.this
                                     .getModelObject().project;
                             selectProject(aNewSelection);
-                        };
+                        }
                     });
                 }
 
