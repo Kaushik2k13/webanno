@@ -603,7 +603,7 @@ public class MonitoringPage
         public Map<String, Integer> annotatorsProgressInPercent = new TreeMap<>(USER_COMPARATOR);
     }
 
-    private class MonitoringDetailForm
+    private static class MonitoringDetailForm
         extends Form<Project>
     {
         private static final long serialVersionUID = -1L;
@@ -814,7 +814,7 @@ public class MonitoringPage
 
     }
 
-    public class ResultModel
+    public static class ResultModel
         implements Serializable
     {
         private static final long serialVersionUID = 3611186385198494181L;
