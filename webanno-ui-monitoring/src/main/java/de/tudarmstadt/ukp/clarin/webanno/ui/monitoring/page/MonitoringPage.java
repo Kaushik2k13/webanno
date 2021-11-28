@@ -217,7 +217,7 @@ public class MonitoringPage
 
         if (project.isPresent()) {
             // Check access to project
-            if (project != null && !(projectService.isCurator(project.get(), user)
+            if (!(projectService.isCurator(project.get(), user)
                     || projectService.isManager(project.get(), user))) {
                 error("You have no permission to access project [" + project.get().getId() + "]");
                 setResponsePage(getApplication().getHomePage());
