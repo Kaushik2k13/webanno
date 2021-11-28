@@ -869,9 +869,6 @@ public class MonitoringPage
         BarRenderer renderer = new BarRenderer();
         renderer.setBarPainter(new StandardBarPainter());
         renderer.setShadowVisible(false);
-        // renderer.setGradientPaintTransformer(new
-        // StandardGradientPaintTransformer(
-        // GradientPaintTransformType.HORIZONTAL));
         renderer.setSeriesPaint(0, Color.BLUE);
         chart.getCategoryPlot().setRenderer(renderer);
 
