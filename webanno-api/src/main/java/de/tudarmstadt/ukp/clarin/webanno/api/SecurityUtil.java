@@ -15,6 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/*There are depercated classes in the file and these can be removed to increase the code readability and decrease the build time of the program*/
 package de.tudarmstadt.ukp.clarin.webanno.api;
 
 import static java.util.Arrays.asList;
